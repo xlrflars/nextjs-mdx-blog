@@ -21,7 +21,7 @@ export default function RootLayout({
            
           
         <div className="container flex items-center justify-start p-6 mx-auto text-gray-600 capitalize">
-          <h1 className="text-2xl font-bold justify-content-left">
+          <h1 className="text-2xl font-bold justify-content-left ">
             My Blog
           </h1>
 
@@ -32,6 +32,11 @@ export default function RootLayout({
           <Link href={"/blog"} className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6">
             Blog
           </Link>
+
+          <Link href={"/about"} className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6">
+            About
+          </Link>
+          
 
         
           </div>
