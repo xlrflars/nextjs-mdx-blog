@@ -15,8 +15,6 @@ export async function getPostData(blogId: string): Promise<{
 	//Lazy load the mdx file for the project
 	try {
 		const file = await import("../blogs/" + blogId + ".mdx");
-		
-		console.log(file)
 		if (file?.metadata) return file.metadata;
        
 		else {

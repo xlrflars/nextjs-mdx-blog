@@ -24,7 +24,7 @@ export default async function Blogs() {
                         <li key={blog.id} className="py-4 px-6">
 							
                             <Link prefetch={false} href={`../blog/${blog.id}`}>
-                                <a className="text-gray-900 hover:underline">{blog.title}</a>
+                                <a className="text-gray-900 hover:underline font-bold text-sm">{blog.title}</a>
                                 <span className="block text-gray-500 text-sm mt-1">
                                     {blog.date.toLocaleDateString()}
                                 </span>
