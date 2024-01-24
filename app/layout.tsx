@@ -13,8 +13,8 @@ export default function RootLayout({
  children: React.ReactNode;
 }) {
  return (
-    <html lang="en">
-      <body className="bg-gray-100 text-black">
+    <html lang="en" className="h-full">
+      <body className="bg-gray-100 text-black min-h-full flex flex-col">
         
         <nav className="bg-white shadow">
           
@@ -37,14 +37,42 @@ export default function RootLayout({
             About
           </Link>
           
-
         
           </div>
         </nav>
         
+        <div className="flex flex-col flex-1">
+          <main className="ml-30 mt-16 flex-1">{children}</main>
+
+          <footer className="bg-black text-white py-5">
+          
+          <ul className="flex flex-row justify-center">
+            <li className="mx-5">
+            <Link href={"https://github.com/xlrflars/nextjs-mdx-blog"} target="_blank" className="underline">
+            GitHub Repository
+            </Link>
+            </li>
+            <li>
+            <Link href={"https://www.secomea.com/"} target="_blank" className="underline">
+            Secomea
+            </Link>
+            </li>
+            <li>
+              
+            </li>
+  
+          </ul>
+        </footer> 
+        </div>
         
-        <main className="ml-30 mt-16">{children}</main>
+        
+        
+
       </body>
+      
+
+
+
     </html>
  );
 }

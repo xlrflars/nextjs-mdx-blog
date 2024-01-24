@@ -11,10 +11,12 @@ export default async function About() {
         <div className="container mx-auto p-4">
         <h1 className="text-xl font-bold mb-2">Welcome to my About Page</h1>
             <p className="mt-2 leading-relaxed justify-start mb-2">
-                Some Kind Of Super Important About Information, clearly super interesting.
-                Basically this again but different. Also Very important.Some Kind Of Super 
-                Important About Information, clearly super interesting.Basically this again 
-                but different. Also Very important.
+                This blog was created with the help of a nextjs guide, 
+                the goal was to create a static Nextjs blog that would 
+                be able to show markdown files.
+
+                In the process I would learn some basic Nextjs, while also
+                having a place to show what ive learned.
             </p>
 
         <h3 className="font-medium mt-10 mb-2">Amazing Sub Title</h3>
