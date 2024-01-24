@@ -14,26 +14,26 @@ export default function RootLayout({
 }) {
  return (
     <html lang="en" className="h-full">
-      <body className="bg-gray-100 text-black min-h-full flex flex-col">
+      <body className="bg-gray-100 dark:bg-gray-800 text-black dark:text-white min-h-full flex flex-col">
         
-        <nav className="bg-white shadow">
+        <nav className="bg-white dark:bg-gray-600 shadow">
           
            
           
-        <div className="container flex items-center justify-start p-6 mx-auto text-gray-600 capitalize">
+        <div className="container flex items-center justify-start p-6 mx-auto text-gray-600 dark:text-gray-100 capitalize">
           <h1 className="text-2xl font-bold justify-content-left ">
             My Blog
           </h1>
 
 
-          <Link href={"/"} className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/"} className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
             Home
           </Link>
-          <Link href={"/blog"} className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/blog"} className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
             Blog
           </Link>
 
-          <Link href={"/about"} className="border-b-2 border-transparent hover:text-gray-800 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/about"} className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
             About
           </Link>
           
@@ -48,15 +48,16 @@ export default function RootLayout({
           
           <ul className="flex flex-row justify-center">
             <li className="mx-5">
-            <Link href={"https://github.com/xlrflars/nextjs-mdx-blog"} target="_blank" className="underline">
+            <Link href={"https://github.com/xlrflars/nextjs-mdx-blog"} target="_blank" className="underline hover:text-blue-300">
             GitHub Repository
             </Link>
             </li>
             <li>
-            <Link href={"https://www.secomea.com/"} target="_blank" className="underline">
+            <Link href={"https://www.secomea.com/"} target="_blank" className="underline hover:text-blue-300">
             Secomea
             </Link>
             </li>
+            
             <li>
               
             </li>
