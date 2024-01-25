@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`flex flex-1 fixed w-full shadow-lg bg-gradient-to-r from-blue-900 to-gray-600 dark:bg-gray-600 shadow ${navbarExpanded ? 'h-24' : 'h-20'}`}>
+        <nav className={`flex flex-1 fixed w-full shadow-lg bg-gradient-to-r to-lime-600 via-blue-900 from-blue-950 dark:bg-gray-600 shadow ${navbarExpanded ? 'ease-in duration-500 h-36 sm-h-36' : 'h-24 duration-500 ease-in'}`}>
             <div className='container flex justify-between items-center p-6 text-gray-200 dark:text-gray-100'>
                 <div className='flex ml-10'>
                     <Link href={'/'}>
@@ -25,7 +25,7 @@ const Navbar = () => {
                             />
                     
                     </Link>
-                    <Link href={'/'} className='ml-2 navtext'>
+                    <Link href={'/'} className='ml-2 navtext '>
                             My Blog
                        
                     </Link>

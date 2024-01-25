@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className="flex flex-col flex-1">
           <main className=" mt-36 mb-20 flex-1">{children}</main>
 
-          <footer className="bg-gradient-to-r from-indigo-950 via-indigo-900 to-indigo-950 text-white py-8">
+          <footer className="bg-gradient-to-r from-gray-950 via-blue-950 via-black via-blue-950 to-gray-950 text-white py-8">
             <div className="container mx-auto px2">
               <div className="flex justify-between">
                 <div>

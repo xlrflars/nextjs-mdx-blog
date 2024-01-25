@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container mx-auto p-4">
       <h2 className="titletext">Welcome to my Next.js Blog</h2>
-      <p className="mt-2 leading-relaxed  mb-10">
+      <p className="mt-2 leading-relaxed  mb-5">
       
       Welcome to my blog! Im thrilled to share with you the journey of 
       creating this platform using Next.js 14 and Tailwind CSS. This blog 
@@ -16,6 +16,43 @@ export default function Home() {
        able to create a seamless browsing experience, ensuring that your reading time 
        is smooth and enjoyable 1.
        </p>
+      <div className="flex flex-col justify-between">
+      <div className="flex ">
+      <ul>
+        <li className="list-disc ml-20">
+          Reason 1
+        </li>
+        <li className="list-disc ml-20">
+          Reason 2
+        </li>
+        <li className="list-disc ml-20">
+          Reason 3
+        </li>
+        <li className="list-disc ml-20 pb-10">
+          Reason 4
+        </li>
+       </ul>
+
+       <ul >
+        <li className="list-disc ml-20">
+          Reason 5
+        </li>
+        <li className="list-disc ml-20">
+          Reason 6
+        </li>
+        <li className="list-disc ml-20">
+          Reason 7
+        </li>
+        <li className="list-disc ml-20 pb-10">
+          Reason 8
+        </li>
+       </ul>
+      </div>
+      <div>
+        
+      </div>
+      </div>
+       
        <h3 className="subtitletext">  Some Other Heading</h3>
       <p>
       On the other hand, Tailwind CSS is a utility-first CSS framework that Ive 
