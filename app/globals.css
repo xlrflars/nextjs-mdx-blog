@@ -2,3 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+    .bloglink{
+        @apply
+        text-gray-900 
+        dark:text-gray-300 
+        hover:text-amber-600 
+        dark:hover:text-amber-300 
+        font-bold 
+        text-sm
+    }
+    .titletext{
+        @apply 
+        text-2xl 
+        font-bold 
+        text-blue-600 
+        dark:text-amber-500
+    }
+
+    .subtitletext{
+        @apply 
+        text-2xl 
+        font-bold 
+        text-blue-600 
+        dark:text-amber-500
+    }
+
+    .navlink{
+        @apply 
+        border-b-2 
+        border-transparent 
+        hover:text-gray-200 
+        dark:hover:text-gray-100 
+        hover:border-blue-500 
+        mx-1.5 
+        sm:mx-6
+    }
+
+    .navtext{
+        @apply 
+        text-4xl 
+        font-bold 
+        text-amber-500
+    }
+
+    .footertext{
+        @apply 
+        text-xl 
+        font-bold 
+        mb-3 
+        text-amber-500
+    }
+
+    .footerlink{
+        @apply 
+        hover:text-blue-300
+    }
+}

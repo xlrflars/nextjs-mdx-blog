@@ -21,21 +21,28 @@ export default function RootLayout({
            
           
         <div className="container flex justify-start p-6 text-gray-200 dark:text-gray-100 ">
-          <div className="flex px-20 ml-9">
-          <h1 className="text-4xl font-bold text-amber-500 ">
+          <div className="ml-10">
+          <img
+                className="h-10"
+                src="https://icon-library.com/images/logo-icon/logo-icon-8.jpg" 
+                alt="Logo"
+                />
+          </div>
+          <div className="flex mx-8">
+          <h1 className="navtext ">
             My Blog
           </h1>
           </div>
          
           <div className="flex mt-3">
-          <Link href={"/"} className="border-b-2 border-transparent hover:text-gray-200 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/"} className="navlink">
             Home
           </Link>
-          <Link href={"/blog"} className="border-b-2 border-transparent hover:text-gray-200 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/blog"} className="navlink">
             Blog
           </Link>
 
-          <Link href={"/about"} className="border-b-2 border-transparent hover:text-gray-200 dark:hover:text-gray-100 hover:border-blue-500 mx-1.5 sm:mx-6">
+          <Link href={"/about"} className="navlink">
             About
           </Link>
           </div>
@@ -53,17 +60,17 @@ export default function RootLayout({
             <div className="container mx-auto px2">
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-xl font-bold mb-3 text-amber-500">
+                  <h2 className="footertext">
                     Links
                   </h2>
                   <ul>
                     <li>
-                    <Link href={"https://github.com/xlrflars/nextjs-mdx-blog"} target="_blank" className="hover:text-blue-300">
+                    <Link href={"https://github.com/xlrflars/nextjs-mdx-blog"} target="_blank" className="footerlink">
                       - GitHub Repository
                     </Link>
                     </li>
                     <li>
-                    <Link href={"https://www.secomea.com/"} target="_blank" className="hover:text-blue-300">
+                    <Link href={"https://www.secomea.com/"} target="_blank" className="footerlink">
                       - Secomea
                     </Link>
                     </li>
@@ -71,17 +78,17 @@ export default function RootLayout({
                 </div>
 
                 <div>
-                  <h2 className="text-xl font-bold mb-3 text-amber-500">
+                  <h2 className="footertext">
                     Learn More
                   </h2>
                   <ul>
                     <li>
-                    <Link href={"/about"}  className="hover:text-blue-300">
+                    <Link href={"/about"}  className="footerlink">
                       - About
                     </Link>
                     </li>
                     <li>
-                    <Link href={"/blog"} className="hover:text-blue-300">
+                    <Link href={"/blog"} className="footerlink">
                       - Blog
                     </Link>
                     </li>
@@ -90,10 +97,11 @@ export default function RootLayout({
 
 
                 <div>
-                  <h2 className="text-xl font-bold mb-3">
-                    Logo
-                  </h2>
-                  
+                <img
+                className="h-20"
+                src="https://icon-library.com/images/logo-icon/logo-icon-8.jpg" 
+                alt="Logo"
+                />
                 </div>
 
               </div>
