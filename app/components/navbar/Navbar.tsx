@@ -14,18 +14,18 @@ const Navbar = () => {
 
     return (
         <nav className={`flex flex-1 fixed w-full shadow-lg bg-gradient-to-r from-blue-900 to-gray-600 dark:bg-gray-600 shadow ${navbarExpanded ? 'h-24' : 'h-20'}`}>
-            <div className='container flex justify-between items-center p-6 text-gray-200 dark:text-gray-100'>
-                <div className='flex items-center'>
+            <div className='container flex text-gray-200 dark:text-gray-100'>
+                <div className='flex'>
                     <Link href={'/'}>
                         
                             <img
-                                className='h-10 cursor-pointer'
+                                className='h-10'
                                 src='https://icon-library.com/images/logo-icon/logo-icon-8.jpg'
                                 alt='Logo'
                             />
                     
                     </Link>
-                    <Link href={'/'} className='ml-2 navtext cursor-pointer'>
+                    <Link href={'/'} className='ml-20 navtext'>
                             My Blog
                        
                     </Link>
