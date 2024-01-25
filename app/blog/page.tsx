@@ -16,7 +16,7 @@ export default async function Blogs() {
     //Display all posts
     return (
         <div className="max-w-md mx-auto bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden md:max-w-2xl m-4">
-            <p className="text-blue-800 dark:text-blue-400 p-4 font-bold">Latest Blog Posts</p>
+            <p className="text-blue-800 dark:text-amber-500 p-4 text-2xl font-bold">Latest Blog Posts</p>
 
             <ul className="border-t border-b border-gray-200 divide-y">
                 {blogs.map((blog) => {
@@ -24,7 +24,7 @@ export default async function Blogs() {
                         <li key={blog.id} className="py-4 px-6">
 							
                             <Link prefetch={false} href={`../blog/${blog.id}`}>
-                                <a className="text-gray-900 dark:text-gray-300 hover:underline font-bold text-sm">{blog.title}</a>
+                                <a className="text-gray-900 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-300 font-bold text-sm">{blog.title}</a>
                                 <span className="block text-gray-500 text-sm mt-1">
                                     {blog.date.toLocaleDateString()}
                                 </span>
