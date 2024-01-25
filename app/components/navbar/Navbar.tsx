@@ -14,8 +14,8 @@ const Navbar = () => {
 
     return (
         <nav className={`flex flex-1 fixed w-full shadow-lg bg-gradient-to-r from-blue-900 to-gray-600 dark:bg-gray-600 shadow ${navbarExpanded ? 'h-24' : 'h-20'}`}>
-            <div className='container flex text-gray-200 dark:text-gray-100'>
-                <div className='flex'>
+            <div className='container flex justify-between items-center p-6 text-gray-200 dark:text-gray-100'>
+                <div className='flex ml-10'>
                     <Link href={'/'}>
                         
                             <img
@@ -25,7 +25,7 @@ const Navbar = () => {
                             />
                     
                     </Link>
-                    <Link href={'/'} className='ml-20 navtext'>
+                    <Link href={'/'} className='ml-2 navtext'>
                             My Blog
                        
                     </Link>
