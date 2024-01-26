@@ -13,27 +13,34 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`flex flex-1 fixed w-full shadow-lg bg-gradient-to-r to-lime-600 via-blue-900 from-blue-950 dark:bg-gray-600 shadow ${navbarExpanded ? 'ease-in duration-500 h-36 sm-h-36' : 'h-24 duration-500 ease-in'}`}>
-            <div className='container flex justify-between items-center p-6 text-gray-200 dark:text-gray-100'>
-                <div className='flex ml-10'>
-                    <Link href={'/'}>
+        <nav className={`flex md:flex-1 fixed w-full shadow-lg bg-gradient-to-r to-lime-600 via-blue-900 from-blue-950 dark:bg-gray-600 shadow ${navbarExpanded ? 'ease-in duration-1000 h-28 md:h-36 lg:36' : 'h-24 duration-500 ease-in'}`}>
+            <div className='container flex justify-between md:items-center md:p-6 text-gray-200 dark:text-gray-100'>
+                <div className='hidden md:flex md:ml-10'>
+                    
                         
                             <img
-                                className='h-10'
+                                className='h-10 w-10 md:h-10 lg:h-10'
                                 src='https://icon-library.com/images/logo-icon/logo-icon-8.jpg'
                                 alt='Logo'
                             />
                     
-                    </Link>
-                    <Link href={'/'} className='ml-2 navtext '>
+                    
+                    <Link href={'/'} className='ml-2 md:navtext lg:navtext'>
                             My Blog
                        
                     </Link>
                 </div>
-                <div
+                <div className="flex ml-10 mt-8 md:hidden">
+                <img
+                                className='h-10 w-10 md:h-10 lg:h-10'
+                                src='https://icon-library.com/images/logo-icon/logo-icon-8.jpg'
+                                alt='Logo'
+                            />
+                </div>
+                <div 
                     className={
                         menuOpen
-                            ? 'flex mt-1 text-2xl'
+                            ? 'md:flex mt-9 text-lg md:mt-1 md:text-2xl'
                             : 'hidden'
                     }>
                     <Link href={'/'} className='navlink'>
@@ -46,7 +53,8 @@ const Navbar = () => {
                         About
                     </Link>
                 </div>
-                <div className='flex py-2 px-4 text-3xl cursor-pointer' onClick={handleNav}>
+                
+                <div className='flex py-10 px-10 md:py-2 md:px-4 md:text-3xl cursor-pointer' onClick={handleNav}>
                     <AiOutlineMenu />
                 </div>
             </div>
