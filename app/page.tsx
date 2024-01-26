@@ -6,7 +6,7 @@ export default function Home() {
       <h2 className="titletext">Welcome to my Next.js Blog</h2>
       <p className="mt-2 leading-relaxed  mb-5">
       
-      Welcome to my blog! I'm thrilled to share` with you the journey of 
+      Welcome to my blog! I&apos;m thrilled to share with you the journey of 
       creating this platform using Next.js 14 and Tailwind CSS. This blog 
       is built to handle markdown files, allowing me to present my thoughts 
       and ideas in a structured and readable format. Next.js 14 provides a robust 
