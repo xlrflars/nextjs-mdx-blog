@@ -31,11 +31,14 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex ml-10 mt-8 md:hidden">
+                    <Link href={'/'}>
+                    
                 <img
                                 className='h-10 w-10 md:h-10 lg:h-10'
                                 src='https://icon-library.com/images/logo-icon/logo-icon-8.jpg'
                                 alt='Logo'
                             />
+                    </Link>
                 </div>
                 <div 
                     className={
